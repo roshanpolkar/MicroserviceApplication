@@ -1,0 +1,24 @@
+spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
+spring:
+  application:
+    name: web-service
+  freemarker:
+    enabled: false
+  thymeleaf:
+    cache: false
+    prefix: classpath:/web-server/templates/
+
+error.path: /error
+
+server.port: 3333   # HTTP (Tomcat) port
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.32.214:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+
+management.endpoints.web.exposure.include: '*'
