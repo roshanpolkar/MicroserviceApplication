@@ -1,0 +1,8 @@
+ALTER TABLE product MODIFY COLUMN product_id number NOT NULL DEFAULT '0';
+
+ALTER TABLE product MODIFY product_id  int NOT NULL AUTO_INCREMENT;
+
+
+insert into product (product_name, description, price, quantity) values ('mouse', 'Wireless mouse', 400.00, 10);
+
+insert into product (product_name, description, price, quantity) values ('keyboard', 'Wireless keyboard', 1200.00, 20);
